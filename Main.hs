@@ -164,5 +164,6 @@ allHands xs = map Hand (combs 5 xs)
 
 -- given a deck returns a set of all possible hands. 
 -- The only difference with the above function is that it does not include repetitive hands.
+-- note that I did not use the foldl' function and instead used the foldr function. However, using foldl' will optimize your performance.
 distinctHands :: Deck -> Set Hand
 distinctHands xs = foldr insert empty (allHands xs)
