@@ -1,4 +1,4 @@
--- This is ONLY the DOMAIN of the haskell game.  
+-- This is ONLY the DOMAIN of the poker game in haskell
 
 -- importing the necessary functions. 
 import Data.List     (foldl', group, sort)
